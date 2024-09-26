@@ -1,0 +1,9 @@
+class Solution(object):
+    def middleNode(self, head):
+        t=head
+        r=head
+        while r and r.next:
+            t=t.next
+            r=r.next.next
+        return t
+        
